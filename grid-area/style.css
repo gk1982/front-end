@@ -1,0 +1,75 @@
+
+#container {
+  display: grid;
+  grid-template-columns: 70px 70px 35px 35px 35px;
+  grid-template-rows: 35px 70px;
+  gap: 10px 10px;
+  
+}
+.container {
+  grid-template-areas:
+  "first second fix equals sum"
+  "bin bin . . .";
+}
+.containerWithoutsecondPart {
+  grid-template-areas:
+  "first fix equals sum ."
+  "bin bin . . .";
+}
+
+.containerWithoutfirstPart {
+  grid-template-areas:
+  "second fix equals sum ."
+  "bin bin . . .";
+}
+
+.firstPart {
+ grid-area: first;
+ line-height: 35px;
+  text-align: center;
+  font-size: 23px;
+ border: 1px solid black;
+}
+
+.secondPart {
+ grid-area: second;
+ line-height: 35px;
+ text-align: center;
+ font-size: 23px;
+ border: 1px solid black;
+}
+
+.fixedPart {
+ grid-area: fix;
+ line-height: 35px;
+ text-align: center;
+ font-size: 23px;
+ border: 1px solid black;
+ background: darkgrey;
+}
+
+.equals {
+  grid-area: equals;
+  line-height: 35px;
+  text-align: center;
+  font-size: 23px;
+  border: 1px solid black;
+  background: darkgrey;
+}
+
+.sum {
+  grid-area: sum;
+  line-height: 35px;
+  text-align: center;
+  font-size: 23px;
+  border: 1px solid black;
+  background: tomato;
+}
+
+.bin {
+  grid-area: bin;
+  line-height: 70px;
+  text-align: center;
+  font-size: 26px;
+  border: 1px solid black;
+}
